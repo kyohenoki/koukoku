@@ -1,0 +1,12 @@
+{
+  "name": "koukoku",
+  "version": "0.0.1",
+  "description": "koukoku",
+  "author": "kyohenoki",
+  "license": "MIT",
+  "homepage": "https://github.com/kyohenoki/koukoku#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyohenoki/koukoku.git"
+  }
+}
