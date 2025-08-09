@@ -7,6 +7,6 @@
   "homepage": "https://github.com/kyohenoki/koukoku#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyohenoki/koukoku.git"
+    "url": "https://github.com/kyohenoki/koukoku"
   }
 }
