@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "SF Pro S", "SF Pro", "Hiragino Sans", system-ui, sans-serif;
+  font-family: "SF Pro S", "SF Pro", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
 }
 
 @font-face {
