@@ -1,13 +1,32 @@
-import Koukoku from "./block"
-import { Mitame } from "./mitame"
+// import Koukoku from "./block"
+// import { Mitame } from "./mitame"
+
+import Block from "./blocks"
+import { Nakami } from "./nakami"
 
 export default function Index() {
+  const nakami: Nakami = {
+    id: "ichiban"
+  }
+  return (
+    <main className="antialiased p-5 w-full flex flex-col items-center justify-center">
+      <div className="max-w-3xl w-full flex flex-col justify-center items-center">
+        <Block nakami={nakami} className="w-full max-w-[450px] aspect-[3/2] bg-neutral-100"/>
+      </div>
+    </main>
+  )
+}
+
+// ただただ彷徨い心ときめる偶然の発見
+
+
+/*
+
   const mitame: Mitame = {
     id: "ichiban",
     width: "fit"
   }
-  return (
-    <main className="antialiased p-5">
+
       <div className="w-[350px] flex flex-col items-center justify-center bg-neutral-800">
         <div className="p-5 w-full flex flex-col items-center">
           <div className="text-white mb-5 text-2xl">
@@ -18,6 +37,4 @@ export default function Index() {
           <Koukoku mitame={mitame}/>
         </div>
       </div>
-    </main>
-  )
-}
+*/
