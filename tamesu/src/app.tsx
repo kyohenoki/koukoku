@@ -1,4 +1,7 @@
-import { Koukoku, Nakami } from "@/koukoku/index"
+// import { Koukoku } from "@koukoku/index"
+// import type { Nakami } from "@koukoku/index"
+import { Koukoku } from "koukoku"
+import type { Nakami } from "koukoku"
 
 export default function App() {
   const nakami: Nakami = {

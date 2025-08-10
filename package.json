@@ -1,13 +1,10 @@
 {
   "name": "koukokuv",
-  "version": "0.0.1",
-  "type": "module",
   "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "workspaces": [
+    "koukoku",
+    "tamesu"
+  ],
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

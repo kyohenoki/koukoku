@@ -1,3 +1,7 @@
+packages:
+  - koukoku
+  - tamesu
+
 onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - esbuild

@@ -1,4 +1,4 @@
-import { Nakami } from "./nakami"
+import type { Nakami } from "./nakami"
 
 export default function Koukoku({nakami, className}: {nakami: Nakami, className?: string}) {
   return (
