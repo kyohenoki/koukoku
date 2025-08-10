@@ -1,3 +1,4 @@
 export type Nakami = {
-  id: string
+  id: string,
+  hitokoto?: string
 }
