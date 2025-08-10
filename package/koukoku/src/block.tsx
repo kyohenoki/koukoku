@@ -1,3 +1,5 @@
+"use client"
+
 import { Nakami } from "./nakami"
 
 type Komoku = {
