@@ -1,0 +1,23 @@
+{
+  "name": "koukoku",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "main": "dist/koukoku.cjs.js",
+  "module": "dist/koukoku.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "okuru": "ts-node src/okuru.ts"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "ky": "^1.8.2"
+  }
+}

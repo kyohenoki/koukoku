@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 node_modules
 dist
 
 .next
 next-env.d.ts
 
+=======
+.wrangler
+
+node_modules
+dist
+
+>>>>>>> koukokuv/main
 .DS_Store

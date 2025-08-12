@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "workspace",
   "version": "0.0.1",
   "private": true,
@@ -16,5 +17,28 @@
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
+=======
+  "name": "koukokuv",
+  "private": true,
+  "workspaces": [
+    "koukoku",
+    "tamesu",
+    "uragawa"
+  ],
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tailwindcss": "^4.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.1"
+>>>>>>> koukokuv/main
   }
 }
