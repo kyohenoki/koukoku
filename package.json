@@ -1,23 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "workspace",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "koukoku": "cd package/koukoku && pnpm install && pnpm run dev",
-    "tsugi": "cd playground/tsugi && pnpm install && pnpm run dev"
-  },
-  "devDependencies": {
-    "@types/node": "24.2.1",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "tailwindcss": "^4.1.11",
-    "typescript": "5.9.2"
-  },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-=======
   "name": "koukokuv",
   "private": true,
   "workspaces": [
@@ -39,6 +20,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "vite": "^7.1.1"
->>>>>>> koukokuv/main
   }
 }

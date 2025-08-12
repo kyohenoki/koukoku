@@ -1,13 +1,4 @@
 packages:
-<<<<<<< HEAD
-  - package/*
-  - playground/*
-
-onlyBuiltDependencies:
-  - "@tailwindcss/oxide"
-  - esbuild
-  - sharp
-=======
   - koukoku
   - tamesu
   - uragawa
@@ -17,4 +8,3 @@ onlyBuiltDependencies:
   - esbuild
   - sharp
   - workerd
->>>>>>> koukokuv/main
