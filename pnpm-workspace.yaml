@@ -1,7 +1,10 @@
 packages:
   - koukoku
   - tamesu
+  - uragawa
 
 onlyBuiltDependencies:
-  - "@tailwindcss/oxide"
+  - '@tailwindcss/oxide'
   - esbuild
+  - sharp
+  - workerd

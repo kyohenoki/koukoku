@@ -5,10 +5,19 @@
   "private": true,
   "main": "dist/koukoku.cjs.js",
   "module": "dist/koukoku.es.js",
-  "types": "dist/src/index.d.ts",
-  "files": ["dist"],
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc --project tsconfig.json"
+    "build": "vite build",
+    "okuru": "bun run src/okuru.ts"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "ky": "^1.8.2"
   }
 }

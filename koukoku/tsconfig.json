@@ -15,7 +15,8 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@uragawa/*": ["../uragawa/src/*"]
     },
     "declaration": true,
     "emitDeclarationOnly": true,

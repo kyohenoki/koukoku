@@ -1,0 +1,16 @@
+{
+  "name": "uragawa",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "hono": "^4.9.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.28.1"
+  }
+}

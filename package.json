@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "koukoku",
-    "tamesu"
+    "tamesu",
+    "uragawa"
   ],
   "dependencies": {
     "react": "^19.1.1",
