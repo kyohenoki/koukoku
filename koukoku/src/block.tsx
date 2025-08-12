@@ -9,7 +9,7 @@ export default function Koukoku({nakami, className}: {nakami: Nakami, className?
 
   useEffect(() => {
     async function morau() {
-      const o = await koncha("iine")
+      const o = await koncha(nakami.id)
       setOkuru(o)
     }
     morau()

@@ -1,6 +1,11 @@
 {
   "name": "koukokuv",
   "private": true,
+  "scripts": {
+    "build": "cd koukoku && pnpm run build",
+    "dev:tamesu": "cd tamesu && pnpm run dev",
+    "dev:uragawa": "cd uragawa && pnpm run dev"
+  },
   "workspaces": [
     "koukoku",
     "tamesu",

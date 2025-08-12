@@ -1,12 +1,13 @@
-// import { Koukoku } from "@koukoku/index"
-// import type { Nakami } from "@koukoku/index"
-import { Koukoku } from "koukoku"
-import type { Nakami } from "koukoku"
+// import { Koukoku } from "koukoku"
+// import type { Nakami } from "koukoku"
+
+import { Koukoku } from "@koukoku/index"
+import type { Nakami } from "@koukoku/index"
 
 export default function App() {
   const nakami: Nakami = {
     id: "ichiban",
-    hitokoto: "私は試しの広告だ！"
+    hitokoto: "きっとここにはいい広告が載る"
   }
   return (
     <main className="antialiased p-5">

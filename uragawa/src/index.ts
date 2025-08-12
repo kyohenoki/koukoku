@@ -14,7 +14,7 @@ export type okuruKomoku = {
 }
 
 function jikan(d: Date) {
-  const d1 = format(d, 'yyyy-MM-dd HH:mm:ss')
+  const d1 = format(d, 'yyyy/MM/dd HH:mm:ss')
   const d2 = d.getTime().toString()
   return {
     f: d1,
@@ -27,9 +27,9 @@ app.use(prettyJSON())
 app.use(
   '/api/*',
   cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
     allowMethods: ['GET', 'POST', 'OPTIONS'],
-    allowHeaders: ['Content-Type'],
+    allowHeaders: ['Content-Type', 'Authorization'],
     credentials: true
   })
 )
