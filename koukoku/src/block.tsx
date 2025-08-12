@@ -5,7 +5,7 @@ import type { Nakami } from "./nakami"
 import koncha from "./okuru"
 
 export default function Koukoku({nakami, className}: {nakami: Nakami, className?: string}) {
-  const [okuru, setOkuru] = useState(null)
+  const [okuru, setOkuru] = useState("loading")
 
   useEffect(() => {
     async function morau() {
