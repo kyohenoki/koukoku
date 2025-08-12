@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { prettyJSON } from 'hono/pretty-json'
+import { cors } from 'hono/cors'
 import { format } from 'date-fns'
 
 const app = new Hono()
@@ -22,6 +23,18 @@ function jikan(d: Date) {
 }
 
 app.use(prettyJSON())
+
+app.use(
+  '/api/*',
+  cors({
+    origin: 'http://localhost:5173',
+    allowHeaders: ['X-Custom-Header', 'Upgrade-Insecure-Requests'],
+    allowMethods: ['POST', 'GET', 'OPTIONS'],
+    exposeHeaders: ['Content-Length', 'X-Kuma-Revision'],
+    maxAge: 600,
+    credentials: true,
+  })
+)
 
 app.get('/', (c) => {
   return c.text('uragawa')

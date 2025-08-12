@@ -1,7 +1,9 @@
 import ky from 'ky'
 import type { okuruKomoku } from '@uragawa/index'
 
-async function request(item: string) {
+type Result<Komoku> = { success: true; res: Komoku } | { success: false; error: string }
+
+async function request(item: string): Promise<Result<okuruKomoku>> {
   try {
     const api = ky.create({
       prefixUrl: 'http://localhost:8787'
@@ -9,10 +11,27 @@ async function request(item: string) {
     const res = await api.post('api/jikan', {
       json: { item }
     }).json<okuruKomoku>()
-    console.log(res.id, res.date)
+    return {
+      success: true,
+      res
+    }
   } catch (err) {
-    console.error('error', err)
+    return {
+      success: false,
+      error: (err as Error).message
+    }
   }
 }
 
-request("ichiban")
+export default async function koncha(item: string): Promise<string> {
+  try {
+    const okuru = await request(item)
+    if (okuru.success) {
+      return okuru.res.id
+    } else {
+      return "error"
+    }
+  } catch (err) {
+    return "error"
+  }
+}

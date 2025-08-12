@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "okuru": "bun run src/okuru.ts"
+    "okuru": "ts-node src/okuru.ts"
   },
   "devDependencies": {
     "vite-plugin-dts": "^4.5.4"
