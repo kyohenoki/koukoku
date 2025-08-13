@@ -12,7 +12,7 @@
     "ipaddress": "123.45.67.89",
     "location": "kumakuma, kumama, japan",
     "device": "mobile-ios",
-    "useragent": "......"
+    "useragentid": "......" // categoryid と同じように組み合わせを id にする
   }
 }
 
