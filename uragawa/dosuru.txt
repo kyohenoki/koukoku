@@ -1,0 +1,16 @@
+# 段階
+
+* 今の自分に作れんものは一旦諦めて妥協策
+
+* ログを記録する
+* KOUKOKU LOG [load / mita / click / kieta]
+  * TIMESTAMP ミリ秒 "ts": 1755105044844
+  * SESSIONID セッション "sid": [ID]
+  * KOUKOKUID 広告(community)識別 "kid": [ID]
+  * CATEGORYID カテゴリ組み合わせ識別 "cid": [ID]
+  * BLOCKID nakami.id "bid": [nakami.id]
+  * EVENT (load / mita / click / kieta) "event": []
+
+* ID
+  24文字、初めの7文字は時間、残りの17文字はランダムのIDを生成する
+  数学的な知識が一切ないし、ChatGPTに聞いても全然理解が出来なく

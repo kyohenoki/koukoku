@@ -1,7 +1,10 @@
-// 作ったとき
-// 読み込まれたとき
+// 作ったとき load
+// 画面に表示されたとき mita
+// クリックされたとき click
+// ページが閉じたとき close
 
-function tsukuru() {
+function make() {
   // timestamp
   // sessionid
+  // 
 }
