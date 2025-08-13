@@ -67,6 +67,9 @@ importers:
       hono:
         specifier: ^4.9.0
         version: 4.9.0
+      idtsukuru:
+        specifier: ^0.1.0
+        version: 0.1.0
       ioredis:
         specifier: ^5.7.0
         version: 5.7.0
@@ -1207,6 +1210,10 @@ packages:
   hono@4.9.0:
     resolution: {integrity: sha512-JAUc4Sqi3lhby2imRL/67LMcJFKiCu7ZKghM7iwvltVZzxEC5bVJCsAa4NTnSfmWGb+N2eOVtFE586R+K3fejA==}
     engines: {node: '>=16.9.0'}
+
+  idtsukuru@0.1.0:
+    resolution: {integrity: sha512-MOXZIsJolOEIQraHqIYqaWIvT2FRvxcXySDorHyE/xksBNqC7A8279LPLmnJF2osLrRFTtysptSFE2ye01o71Q==}
+    hasBin: true
 
   import-lazy@4.0.0:
     resolution: {integrity: sha512-rKtvo6a868b5Hu3heneU+L4yEQ4jYKLtjpnPeUdK7h0yzXGmyBTypknlkCvHFBqfX9YlorEiMM6Dnq/5atfHkw==}
@@ -2658,6 +2665,8 @@ snapshots:
   he@1.2.0: {}
 
   hono@4.9.0: {}
+
+  idtsukuru@0.1.0: {}
 
   import-lazy@4.0.0: {}
 

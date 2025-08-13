@@ -1,9 +1,45 @@
+# docker
+
 docker compose up -d or docker compose up
 docker exec -it <koukoku-redis-1> redis-cli
 koukoku-redis-1は各自のコンテナ名を使う
 
 # uragawa
 
+pnpm run dev
+honoを使ったwranglerのサーバーを立ち上げる
+workersのローカル環境、ここで基本的に全部のことをする
+
 pnpm run redis
 dockerを立ち上げた上でsrc/redis.tsで色々試すところ
 redisははじめて使うので基本的な使い方を知りたい
+
+# koukoku
+
+pnpm run build
+パッケージをbuildする、型定義のファイルも一緒に作る
+
+# tamesu
+
+pnpm run dev
+viteのサーバーを立ち上げてkoukokuやuragawaの動作を全体的に確かめる
+koukokuはsrcから直接使ってるのでbuildしなくても普通に使える
+実際の環境では import { Koukoku } from "koukoku" にする
+
+# 使ってるもの
+
+それぞれの package.json に書いてる
+
+現時点では koukoku は react と tailwindcss が依存関係にあるが
+将来的には typescript で書き直して、どこでも使えるようにする
+
+pnpm を使う npm や yaml や bun や deno は今のところ使えない
+全て最新バージョンを使う、ちなみに私はvoltaでバージョン管理してます
+
+dockerは全部揃ったdocker desktopをインストールするのがおすすめ
+gordonっていういかつい名前のaiがdockerのことを正確に知ってるから頼りになる
+
+一時的なログとか生成リンクとかの保持には redis を使う、本番環境では upstash を使う予定
+広告の情報とかアルゴリズムで選ぶときに使うデータの保管には clickhouse を使う予定、あまりよくわかっていない
+ユーザー情報とかは postgres を使う、本番環境には neon を使う予定、それぞれを選んだ基準は無料枠があるかどうか
+データベース自体を使うのも詳しく知るのも初めてだからまずはredisでログを作ってみるところからする

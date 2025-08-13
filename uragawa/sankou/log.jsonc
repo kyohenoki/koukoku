@@ -1,0 +1,22 @@
+{
+  "timestamp": 1755071364256, // アクセスした時間・ミリ秒
+  "sessionid": "oxk7sxbm1zu37dk93cvubmzw", // セッションの識別・24文字
+  "koukokuid": "l082v4os4kne", // 広告の識別・12文字
+  "categoryid": "6l3amhv8n281", // カテゴリの識別・12文字
+  "website": "kumakawa.ii", // ドメイン名
+  "url": "kumakawa.ii/blog/76ie01a", // URL
+  "mae": "kumakawa.ii/blog", // ひとつ前のページ（不明の場合あり）
+  "blockid": "knbxs498m8li", // ブロックの識別・12文字
+  "motto": { // 分析に使うものやあとから付け足すときに使う
+    "event": "click", // イベント load / mita / click
+    "ipaddress": "123.45.67.89",
+    "location": "kumakuma, kumama, japan",
+    "device": "mobile-ios",
+    "useragent": "......"
+  }
+}
+
+// sessionid: セッション
+// blockid: <Koukoku/> (URL内で一意) nakami.id とリンクさせる
+// categoryid : 既存の組み合わせの識別、新しい組み合わせだったら作る
+// 広告を選ぶときとかに使いたい

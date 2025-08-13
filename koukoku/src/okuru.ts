@@ -27,7 +27,7 @@ export default async function koncha(item: string): Promise<string> {
   try {
     const okuru = await request(item)
     if (okuru.success) {
-      const gattai = okuru.res.id + " : " + okuru.res.date.f
+      const gattai = okuru.res.id + " ･ " + okuru.res.date.f
       return gattai
     } else {
       return "error"
