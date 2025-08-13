@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify"
+    "deploy": "wrangler deploy --minify",
+    "redis": "ts-node src/redis.ts"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
-    "hono": "^4.9.0"
+    "hono": "^4.9.0",
+    "ioredis": "^5.7.0"
   },
   "devDependencies": {
     "wrangler": "^4.29.0"

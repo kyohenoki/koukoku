@@ -12,8 +12,8 @@ export default function App() {
   return (
     <main className="antialiased p-5">
       <h1 className="text-[1.35rem]">koukokuの試すところ</h1>
-      <div className="pt-3">
-        <Koukoku nakami={nakami}/>
+      <div className="py-3">
+        <Koukoku nakami={nakami} className="bg-neutral-50"/>
       </div>
     </main>
   )

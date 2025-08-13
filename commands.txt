@@ -1,0 +1,9 @@
+docker compose up -d or docker compose up
+docker exec -it <koukoku-redis-1> redis-cli
+koukoku-redis-1は各自のコンテナ名を使う
+
+# uragawa
+
+pnpm run redis
+dockerを立ち上げた上でsrc/redis.tsで色々試すところ
+redisははじめて使うので基本的な使い方を知りたい
