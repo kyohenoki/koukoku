@@ -6,7 +6,7 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "redis": "ts-node src/redis.ts",
-    "time": "ts-node src/time.ts",
+    "time": "ts-node src/bunseki/time.ts",
     "motto": "ts-node src/bunseki/motto.ts"
   },
   "dependencies": {
