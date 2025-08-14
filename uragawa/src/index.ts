@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { prettyJSON } from 'hono/pretty-json'
 import { cors } from 'hono/cors'
 import { format } from 'date-fns'
+import { make } from './bunseki/log'
 
 const app = new Hono()
 
@@ -49,6 +50,12 @@ app.post('/api/jikan', async (c) => {
     date: jikan(new Date())
   }
   return c.json(okuru)
+})
+
+// log
+app.get('/api/log', (c) => {
+  const j = make()
+  return c.json(j)
 })
 
 export default app

@@ -3,8 +3,19 @@
 // クリックされたとき click
 // ページが閉じたとき close
 
-function make() {
+import * as tsuku from "./tsuku.ts"
+
+export function make() {
   // timestamp
   // sessionid
-  // 
+  const log: LogKomoku = {
+    ts: tsuku.timestamp(new Date()),
+    sid: tsuku.sessionid()
+  }
+  return log
+}
+
+export type LogKomoku = {
+  ts: number,
+  sid: string
 }

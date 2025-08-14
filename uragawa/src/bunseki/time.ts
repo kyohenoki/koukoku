@@ -22,7 +22,7 @@ function encode(m: number, xor: number) {
 }
 */
 
-class Base30Encoder {
+export class Base30Encoder {
   private readonly charset: string = "1234567890abcdefhiklmnortuvwxz";
   private readonly baseDate = new Date(2025, 0, 1, 0, 0, 0, 0); // 2025年1月1日 00:00:00
   private readonly xorkey = 1111111;
@@ -79,6 +79,7 @@ class Base30Encoder {
   }
 }
 
+/*
 const encoder = new Base30Encoder();
 
 // IDを生成
@@ -90,3 +91,4 @@ const minutes = encoder.decode(id);
 const originalDate = encoder.decodeToDate(id);
 console.log(`経過分数: ${minutes}`);
 console.log(`元の日時: ${originalDate}`);
+*/

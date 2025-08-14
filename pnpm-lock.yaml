@@ -73,6 +73,9 @@ importers:
       ioredis:
         specifier: ^5.7.0
         version: 5.7.0
+      ky:
+        specifier: ^1.8.2
+        version: 1.8.2
     devDependencies:
       wrangler:
         specifier: ^4.29.0
